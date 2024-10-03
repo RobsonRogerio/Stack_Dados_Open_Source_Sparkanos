@@ -17,3 +17,6 @@ docker compose up -d documentation
 clique no link abaixo ou digite no navegador:
 
 http://localhost:8005/
+
+## Developer
+Wallace Camargo
