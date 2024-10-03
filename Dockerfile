@@ -1,8 +1,5 @@
 FROM wlcamargo/spark-master
 
-# Etl Adventure Works
-
-# Use root to set up the environment
 USER root
 
 RUN mkdir -p /app
