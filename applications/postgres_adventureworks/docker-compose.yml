@@ -2,12 +2,12 @@ services:
   postgres_adventureworks:
     hostname: postgres_adventureworks
     container_name: postgres_adventureworks
-    image: wlcamargo/postgres-adventureworks
+    image: wlcamargo/postgres-adventureworks2
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
-      - '5437:5432'
+      - '5435:5432'
     volumes:
       - db_data:/var/lib/postgresql/data
     networks:
