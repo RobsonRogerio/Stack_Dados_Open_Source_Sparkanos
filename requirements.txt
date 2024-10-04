@@ -9,3 +9,5 @@ pytest
 selenium 
 psycopg2-binary
 minio==7.2.9
+soda-core==3.3.22
+soda-core-postgres==3.3.22
