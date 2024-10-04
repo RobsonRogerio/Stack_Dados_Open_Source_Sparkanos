@@ -176,6 +176,10 @@ nav:
     - Superset: tutorials/superset/superset.md
     - Trino: tutorials/trino/trino.md
     - Open Metadata: tutorials/open_metadata/open_metadata.md
+    - Data Quality: tutorials/data_quality/data_quality.md
+    - Tree: tutorials/tree/tree.md
+    - Pre-commit: tutorials/pre_commit/pre-commit.md
+    - Test: tutorials/test/test.md
   - Projects:
     - Adventureworks: projects/adventureworks.md
     - Convention Names: projects/conventional_names.md
