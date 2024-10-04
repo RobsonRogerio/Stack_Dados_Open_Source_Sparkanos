@@ -64,3 +64,13 @@ pytest -v -c tests/pytest.ini
 expected result:
 
 ![image](assets/result-test.png)
+
+
+## Table used on Postgres for test
+```
+create table public.tb_integration_test (
+	name_test varchar(50)
+)
+
+insert into public.tb_integration_test  values ('integration')
+```
