@@ -1,0 +1,92 @@
+# Checks for HumanresourcesDepartment table
+checks for department:
+  - schema:
+      fail:
+        when required column missing: [departmentid, name, groupname, modifieddate]
+  - schema:
+      fail:
+        when wrong column type:
+          departmentid: integer
+          name: text
+          groupname: text
+          modifieddate: timestamp
+
+# Checks for HumanresourcesEmployee table
+checks for employee:
+  - schema:
+      fail:
+        when required column missing: [businessentityid, nationalidnumber, loginid, jobtitle, birthdate, maritalstatus, gender, hiredate, salariedflag, vacationhours, sickleavehours, currentflag, rowguid, modifieddate, organizationnode]
+  - schema:
+      fail:
+        when wrong column type:
+          businessentityid: integer
+          nationalidnumber: text
+          loginid: text
+          jobtitle: text
+          birthdate: date
+          maritalstatus: character
+          gender: character
+          hiredate: date
+          salariedflag: boolean
+          vacationhours: smallint
+          sickleavehours: smallint
+          currentflag: boolean
+          rowguid: uuid
+          modifieddate: timestamp
+          organizationnode: text
+
+# Checks for HumanresourcesEmployeedepartmenthistory table
+checks for employeedepartmenthistory:
+  - schema:
+      fail:
+        when required column missing: [businessentityid, departmentid, shiftid, startdate, enddate, modifieddate]
+  - schema:
+      fail:
+        when wrong column type:
+          businessentityid: integer
+          departmentid: smallint
+          shiftid: smallint
+          startdate: date
+          enddate: date
+          modifieddate: timestamp
+
+# Checks for HumanresourcesEmployeepayhistory table
+checks for employeepayhistory:
+  - schema:
+      fail:
+        when required column missing: [businessentityid, ratechangedate, rate, payfrequency, modifieddate]
+  - schema:
+      fail:
+        when wrong column type:
+          businessentityid: integer
+          ratechangedate: timestamp
+          rate: double precision
+          payfrequency: smallint
+          modifieddate: timestamp
+
+# Checks for HumanresourcesJobcandidate table
+checks for jobcandidate:
+  - schema:
+      fail:
+        when required column missing: [jobcandidateid, businessentityid, resume, modifieddate]
+  - schema:
+      fail:
+        when wrong column type:
+          jobcandidateid: integer
+          businessentityid: integer
+          resume: xml
+          modifieddate: timestamp
+
+# Checks for HumanresourcesShift table
+checks for shift:
+  - schema:
+      fail:
+        when required column missing: [shiftid, name, starttime, endtime, modifieddate]
+  - schema:
+      fail:
+        when wrong column type:
+          shiftid: integer
+          name: text
+          starttime: time without time zone
+          endtime: time without time zone
+          modifieddate: timestamp

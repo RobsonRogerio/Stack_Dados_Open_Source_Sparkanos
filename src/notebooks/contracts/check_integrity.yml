@@ -1,0 +1,25 @@
+# Checks for department
+# Author: Wallace Camargo
+# Description: This set of checks ensures the integrity and validity of data in the "department" table.
+# It verifies that the row count is within an expected range, checks for missing or invalid department IDs,
+# ensures that there are no duplicate department IDs, and confirms that the "name" column contains exactly
+# three valid entries: 'Marketing', 'Sales', and 'Gambiarra Analyst'.
+
+checks for department:
+  - row_count between 1 and 23
+
+  - missing_count(departmentid) = 0
+
+  - invalid_count(departmentid) = 0:
+      valid min: 1
+      valid max: 30
+
+  - duplicate_count(departmentid) = 0
+  - duplicate_count(name) = 0
+
+  - valid_count(name) = 4:
+      valid values:
+        - 'Marketing'
+        - 'Sales'
+        - 'Gambiarra Analyst'
+        - 'Tech Lead'
