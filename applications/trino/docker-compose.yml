@@ -18,7 +18,7 @@ services:
       - "host.docker.internal:host-gateway"
 
   metastore-db:
-    image: wlcamargo/mariadb
+    image: mariadb:10.5.10
     container_name: metastore-db
     networks:
       - sparkanos
@@ -30,7 +30,7 @@ services:
       - "host.docker.internal:host-gateway"
   
   create-metastore-schema:
-    image: wlcamargo/hive-metastore 
+    image: wlcamargo/hive-metastore
     container_name: create-metastore-schema
     depends_on:
       - metastore-db
