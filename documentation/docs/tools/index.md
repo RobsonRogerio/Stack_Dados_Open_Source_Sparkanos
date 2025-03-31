@@ -21,6 +21,3 @@ Minio is an open-source object storage server compatible with the Amazon S3 clou
 
 ## Open Metadata
 Open Metadata is an open-source data catalog and metadata management platform. It is designed to provide comprehensive data discovery, governance, and collaboration capabilities for organizations. Open Metadata allows users to centralize and manage metadata from various data sources, facilitating data lineage, quality, and compliance. It supports a wide range of integrations, enabling seamless connection with data warehouses, lakes, BI tools, and other systems, thereby enhancing data transparency and enabling better decision-making.
-
-## Terraform
-Terraform is an infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently. This includes low-level components like compute instances, storage, and networking; and high-level components like DNS entries and SaaS features.

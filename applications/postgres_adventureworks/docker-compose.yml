@@ -20,4 +20,3 @@ volumes:
 networks:
   sparkanos:
     external: true
-    # https://github.com/wlcamargo/sparkanos/issues/3

@@ -1,6 +1,6 @@
 services:
   app:
-    image: nginx
+    image: 'docker.io/jc21/nginx-proxy-manager:github-pr-3910'
     restart: unless-stopped
     ports:
       - '80:80'
