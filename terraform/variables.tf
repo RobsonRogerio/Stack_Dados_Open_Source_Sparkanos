@@ -1,7 +1,7 @@
 variable "project" {
   description = "GCP project ID"
   type        = string
-  default     = "dev-projects-427423"
+  default     = "strategic-altar-460618-f4"
 }
 
 variable "region" {
