@@ -20,7 +20,7 @@ def configure_spark():
     """Configure and return a SparkSession."""
     spark = (
         SparkSession.builder.appName("update_bronze")
-        .config("spark.hadoop.fs.s3a.endpoint", f"http://{HOST_ADDRESS}:9000")
+        .config("spark.hadoop.fs.s3a.endpoint", f"http://minio:9000")
         .config("spark.hadoop.fs.s3a.access.key", MINIO_ACCESS_KEY)
         .config("spark.hadoop.fs.s3a.secret.key", MINIO_SECRET_KEY)
         .config("spark.hadoop.fs.s3a.path.style.access", True)
