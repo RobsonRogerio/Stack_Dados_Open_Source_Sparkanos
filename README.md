@@ -21,3 +21,4 @@ http://localhost:8005/
 ## Developer
 Wallace Camargo
 
+# Forçando execução
