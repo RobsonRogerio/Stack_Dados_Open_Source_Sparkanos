@@ -25,5 +25,5 @@ jobs:
         file: Dockerfile 
         push: true
         tags: |
-          wlcamargo/sparkanos-adventure-works:v${{ github.run_number }}
-          wlcamargo/sparkanos-adventure-works:latest
+          robsonrogerio/sparkanos-adventure-works:v${{ github.run_number }}
+          robsonrogerio/sparkanos-adventure-works:latest
