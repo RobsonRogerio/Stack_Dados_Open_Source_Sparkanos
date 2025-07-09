@@ -30,7 +30,7 @@ services:
       - "host.docker.internal:host-gateway"
   
   create-metastore-schema:
-    image: wlcamargo/hive-metastore
+    image: robsonrogerio/hive-metastore
     container_name: create-metastore-schema
     depends_on:
       - metastore-db
@@ -42,7 +42,7 @@ services:
       - "host.docker.internal:host-gateway"
   
   metastore:
-    image: wlcamargo/hive-metastore
+    image: robsonrogerio/hive-metastore
     container_name: metastore
     networks:
       - sparkanos

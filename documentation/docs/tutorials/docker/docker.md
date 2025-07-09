@@ -7,12 +7,12 @@ sudo docker login
 
 ## Pull the image from Docker HUB
 ```
-sudo docker pull wlcamargo/jupyter
+sudo docker pull robsonrogerio/jupyter
 ```
 
 ## Run the container in interactive mode
 ```
-sudo docker run -it --name jupyter wlcamargo/jupyter /bin/bash
+sudo docker run -it --name jupyter robsonrogerio/jupyter /bin/bash
 ```
 
 ## Access the container
@@ -44,7 +44,7 @@ docker cp jupyter:/opt/spark/jars/
 
 ### Tag the image
 ```
-docker tag wlcamargo/spark-master your-repository/image
+docker tag robsonrogerio/spark-master your-repository/image
 ```
 
 ## Docker login
@@ -72,7 +72,7 @@ docker pull nginx
 
 ## Tag image
 ```
-docker tag nginx wlcamargo/nginx-sparkanos:v1
+docker tag nginx robsonrogerio/nginx-sparkanos:v1
 ```
 
 # Docker Swarm Mode
