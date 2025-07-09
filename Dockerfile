@@ -1,4 +1,4 @@
-FROM wlcamargo/spark-master
+FROM robsonrogerio/spark-master
 
 USER root
 
