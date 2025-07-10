@@ -9,7 +9,7 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-version: "3.9"
+# version: "3.9"
 volumes:
   ingestion-volume-dag-airflow:
   ingestion-volume-dags:
@@ -39,7 +39,7 @@ services:
 
   elasticsearch:
     container_name: openmetadata_elasticsearch
-    image: c
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.10.2
     environment:
       - discovery.type=single-node
       - ES_JAVA_OPTS=-Xms1024m -Xmx1024m
