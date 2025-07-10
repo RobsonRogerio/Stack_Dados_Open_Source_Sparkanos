@@ -9,7 +9,7 @@ services:
   spark-master:
     <<: *spark-common
     hostname: spark-master
-    container_name: spark-master
+    container_name: spark-master-dev
     command: 
       - /bin/sh
       - -c
