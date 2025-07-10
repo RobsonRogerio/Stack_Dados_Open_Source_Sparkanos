@@ -27,3 +27,5 @@ WORKDIR /app
 # Switch to a non-root user for running the application (add a new user if needed)
 RUN useradd -ms /bin/bash spark
 USER spark
+
+# This is a test comment for git workflow
