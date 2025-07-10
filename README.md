@@ -22,3 +22,4 @@ http://localhost:8005/
 Wallace Camargo
 
 # Forçando execução
+# trigger CI
