@@ -4,7 +4,7 @@ run_docker_compose() {
     local service_path="$1"
     echo "Running docker-compose in $service_path"
     cd "$service_path" || { echo "Failed to change directory to $service_path"; exit 1; }
-    docker-compose down
+    docker compose down
 }
 
 run_docker_compose "$PROJECT_ROOT/applications/postgres_adventureworks"
